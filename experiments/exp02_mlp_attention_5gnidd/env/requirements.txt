@@ -1,0 +1,12 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+tensorflow==2.*
+pyyaml
+tqdm
+shap
+xgboost
+optuna
+imbalanced-learn

@@ -1,0 +1,35 @@
+data:
+  csv_path: "/content/drive/Othercomputers/My Laptop/General Research/21 - 5G/Combined.csv"
+  label_col: "Label"
+  positive_when_not_benign: true
+  drop_cols: ["Attack Type","Attack Tool","Label","Unnamed: 0","Seq"]
+  sample_size: 40000        # set null to disable sampling
+  top_k_features: 32
+  random_state: 42
+
+split:
+  test_size: 0.40           # then 0.5 from tmp -> val/test (like script: 40% then half)
+  val_size_from_tmp: 0.50
+  stratify: true
+
+scale: minmax
+
+balance:
+  smote: true               # apply SMOTE on training if imbalance severe (<0.7 ratio)
+
+graph:
+  k_neighbors: 10
+  metric: cosine
+
+model:
+  hidden: 64
+  dropout: 0.2
+  K_prop: 10
+  alpha: 0.1
+  lr: 0.001
+  weight_decay: 0.0001
+  epochs: 60
+  patience: 8
+
+paths:
+  results_dir: "results"

@@ -1,0 +1,40 @@
+# --- Data ---
+data:
+  csv_path: "/content/drive/Othercomputers/My Laptop/General Research/21 - 5G/Combined.csv"
+  binary: true
+  drop_id_cols: true
+  test_size: 0.30
+  val_size_from_tmp: 0.50
+  random_state: 42
+
+# --- Preprocess ---
+preprocess:
+  scale: minmax
+  select_k_best:
+    k: 10
+    score_func: chi2
+
+# --- Model ---
+model:
+  latent_dim: 8
+  attn_heads: 2
+  attn_key_dim: 8
+  dropout: 0.15
+  epochs: 8
+  batch_size: 256
+  patience: 2
+
+# --- HDBSCAN ---
+cluster:
+  min_cluster_size: 70
+
+# --- PPR ---
+ppr:
+  k: 12
+  alpha: 0.85
+  sim_edge: 0.80
+
+# --- Paths ---
+paths:
+  checkpoints_dir: "checkpoints"
+  results_dir: "results"

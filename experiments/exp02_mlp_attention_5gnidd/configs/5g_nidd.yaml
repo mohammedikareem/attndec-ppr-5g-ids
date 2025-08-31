@@ -1,0 +1,25 @@
+data:
+  csv_path: "/content/drive/Othercomputers/My Laptop/General Research/21 - 5G/Combined.csv"
+
+split:
+  test_size: 0.30
+  val_size_from_tmp: 0.50
+  random_state: 42
+  stratify: true
+
+preprocess:
+  scale: minmax
+  chi2_dynamic: true
+  chi2_min_k: 10
+  chi2_max_k: 50
+
+train:
+  epochs: 20
+  batch_size: 256
+  earlystop_monitor: "val_pr_auc"
+  earlystop_patience: 5
+  reduce_lr_factor: 0.5
+  reduce_lr_patience: 2
+
+paths:
+  results_dir: "results"
