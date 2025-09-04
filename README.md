@@ -2,7 +2,7 @@
 
 Official code repository for the paper:
 
-**AttnDEC-PPR: An Attention-Driven Deep Embedded Clustering Model with Personalized PageRank Propagation for Robust Anomaly Detection in 5G Networks**  
+**Title paper : xxxx_____Robust Anomaly Detection in 5G Networks**  
 *Mohammed Ibrahim Kareem, Ali Z.K. Matloob, Karrar Imran Ogaili, Ali Kadhum M. Al-Qurabat*  
 (Corresponding author: mohamed.ibrahim@uobabylon.edu.iq)
 
