@@ -2,7 +2,7 @@
 
 Official code repository for the paper:
 
-**Title paper : xxxx_____Robust Anomaly Detection in 5G Networks**  
+**AttnDEC-PPR: Robust Anomaly Detection in 5G Networks**  
 *Mohammed Ibrahim Kareem, Ali Z.K. Matloob, Karrar Imran Ogaili, Ali Kadhum M. Al-Qurabat*  
 (Corresponding author: mohamed.ibrahim@uobabylon.edu.iq)
 
